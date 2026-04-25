@@ -29,7 +29,7 @@ class AIPipeline:
             logger.warning("NVIDIA_API_KEY not found in environment.")
             self.llm = None
         else:
-            self.llm = ChatNVIDIA(model="meta/llama3-70b-instruct", api_key=api_key)
+            self.llm = ChatNVIDIA(model="meta/llama-3.1-70b-instruct", api_key=api_key)
 
     def extract_text_from_pdf(self, pdf_path: str) -> str:
         """Extract all text from a PDF file using PyMuPDF."""

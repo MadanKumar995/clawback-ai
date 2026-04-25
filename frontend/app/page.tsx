@@ -179,7 +179,7 @@ export default function Home() {
                 </div>
               ) : entities ? (
                  <p className="text-sm text-gray-500 mb-6">Provider/Code not found in CMS dataset.</p>
-              )}
+              ) : null}
 
               {step === 2 && (
                 <button 
